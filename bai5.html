@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai5</title>
+</head>
+<body>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Polaris'));">Polaris</h5>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Aldebaran'));">Aldebaran</h5>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Deneb'));">Deneb</h5>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Vega'));">Vega</h5>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Altair'));">Altair</h5>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Dubhe'));">Dubhe</h5>
+	<h5 style="cursor: pointer;" onclick="alert(timChomSao('Regulus'));">Regulus</h5>
+	<script type="text/javascript">
+		let first_arr = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+		let second_arr = [ "Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"];
+		function timChomSao(string){
+			for(let i =0;i< first_arr.length;i++){
+				if(string == first_arr[i]){
+					return second_arr[i];
+				}
+			}
+		}
+	</script>
+</body>
+</html>
